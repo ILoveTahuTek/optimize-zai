@@ -1,0 +1,15 @@
+MONTH 2025-01 rows=19 net=10195.00 gross=10855.00 refund=660.00
+MONTH 2025-02 rows=19 net=3515.00 gross=3915.00 refund=400.00
+NET=60215.00 GROSS=62595.00 REFUND=2380.00
+raw=141 unique=131 dupes=10 dup_signed=270.00 raw_net_minus_unique_net=270.00
+MONTH 2025-01 rows=19 net=10195.00 gross=10855.00 refund=660.00
+MONTH 2025-02 rows=19 net=3515.00 gross=3915.00 refund=400.00
+MONTH 2025-03 rows=27 net=20115.00 gross=20160.00 refund=45.00
+MONTH 2025-04 rows=24 net=9525.00 gross=10365.00 refund=840.00
+MONTH 2025-05 rows=21 net=11755.00 gross=11975.00 refund=220.00
+MONTH 2025-06 rows=21 net=5110.00 gross=5325.00 refund=215.00
+PRODUCT Headset units_sold=78 units_ref=9 net=5520.00 gross=6240.00
+PRODUCT Keyboard units_sold=97 units_ref=4 net=4185.00 gross=4365.00
+PRODUCT Laptop units_sold=32 units_ref=0 net=40000.00 gross=40000.00
+PRODUCT Monitor units_sold=56 units_ref=7 net=10510.00 gross=11990.00
+missing_region=7 unparsed=0 amount_mismatch_pos= refund_mag_mismatch=

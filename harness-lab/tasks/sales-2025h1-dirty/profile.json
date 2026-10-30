@@ -1,0 +1,47 @@
+{
+  "source_file": "/home/z/my-project/harness-lab/tasks/sales-2025h1-dirty/sales.csv",
+  "raw_rows": 141,
+  "unique_rows": 131,
+  "duplicate_rows": 10,
+  "duplicate_value_if_counted": 735.0,
+  "negative_rows": 11,
+  "negative_ids": [
+    "ORD-0083",
+    "ORD-0101",
+    "ORD-0118",
+    "ORD-0014",
+    "ORD-0067",
+    "ORD-0033",
+    "ORD-0084",
+    "ORD-0005",
+    "ORD-0128",
+    "ORD-0049",
+    "ORD-0043"
+  ],
+  "refund_total": 2380.0,
+  "zero_amount_rows": 1,
+  "zero_ids": [
+    "ORD-1001"
+  ],
+  "missing_region_rows": 7,
+  "missing_region_value": 1010.0,
+  "net_revenue": 60215.0,
+  "gross_revenue": 62595.0,
+  "net_by_product": {
+    "Headset": 5520.0,
+    "Keyboard": 4185.0,
+    "Laptop": 40000.0,
+    "Monitor": 10510.0
+  },
+  "net_by_month": {
+    "14/05/2": 80.0,
+    "2025-01": 10195.0,
+    "2025-02": 3515.0,
+    "2025-03": 20115.0,
+    "2025-04": 9525.0,
+    "2025-05": 11495.0,
+    "2025-06": 5110.0,
+    "29/05/2": 180.0
+  },
+  "price_consistency_violations": []
+}

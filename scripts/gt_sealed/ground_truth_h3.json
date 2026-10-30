@@ -1,0 +1,31 @@
+{
+  "net_revenue": 60215.0,
+  "gross_revenue": 62595.0,
+  "refunds_total": 2380.0,
+  "duplicate_rows": 10,
+  "missing_region_rows": 7,
+  "zero_ids": [
+    "ORD-1001"
+  ],
+  "dmy_format_rows": [
+    "ORD-0071",
+    "ORD-0066"
+  ],
+  "top_product": "Laptop",
+  "monthly_net": {
+    "2025-01": 10195.0,
+    "2025-02": 3515.0,
+    "2025-03": 20115.0,
+    "2025-04": 9525.0,
+    "2025-05": 11755.0,
+    "2025-06": 5110.0
+  },
+  "price_changes": {
+    "Monitor": [
+      "210.00",
+      "220.00"
+    ]
+  },
+  "n_rows_raw": 141,
+  "n_rows_unique": 131
+}

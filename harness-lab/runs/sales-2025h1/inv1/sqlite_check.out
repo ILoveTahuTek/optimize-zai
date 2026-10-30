@@ -1,0 +1,13 @@
+sqlite raw_rows=128
+sqlite unique_rows=120
+sqlite dup_rows=8
+sqlite net_revenue=48755.00
+sqlite gross_revenue=49015.00
+sqlite refund_total=260.00
+--- sqlite monthly net ---
+sqlite net[2025-01]=6225.00
+sqlite net[2025-02]=10625.00
+sqlite net[2025-03]=4740.00
+sqlite net[2025-04]=4925.00
+sqlite net[2025-05]=10175.00
+sqlite net[2025-06]=12065.00

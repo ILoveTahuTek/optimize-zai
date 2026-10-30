@@ -1,0 +1,115 @@
+{
+  "raw_rows": 141,
+  "unique_rows": 131,
+  "duplicate_rows": 10,
+  "duplicate_ids": [
+    "ORD-0014",
+    "ORD-0029",
+    "ORD-0034",
+    "ORD-0052",
+    "ORD-0057",
+    "ORD-0063",
+    "ORD-0065",
+    "ORD-0083",
+    "ORD-0089",
+    "ORD-0100"
+  ],
+  "duplicate_signed_value": 270.0,
+  "duplicate_positive_value": 735.0,
+  "net_revenue": 60215.0,
+  "gross_revenue": 62595.0,
+  "refund_total": 2380.0,
+  "refund_rows": 11,
+  "refund_rows_raw_counted": 13,
+  "negative_ids": [
+    "ORD-0083",
+    "ORD-0101",
+    "ORD-0118",
+    "ORD-0014",
+    "ORD-0067",
+    "ORD-0033",
+    "ORD-0084",
+    "ORD-0005",
+    "ORD-0128",
+    "ORD-0049",
+    "ORD-0043"
+  ],
+  "zero_rows": 1,
+  "zero_ids": [
+    "ORD-1001"
+  ],
+  "date_census_raw": {
+    "ISO yyyy-mm-dd": 139,
+    "dd/mm/yyyy": 2
+  },
+  "date_ambiguous_dmy": [],
+  "date_parse_failures": [],
+  "price_constancy": [
+    {
+      "product": "Monitor",
+      "old_price": 210.0,
+      "new_price": 220.0,
+      "first_affected_date": "2025-05-12",
+      "rows_at_old": 16,
+      "rows_at_new": 10
+    }
+  ],
+  "arithmetic_violations_positive": [],
+  "arithmetic_violations_negative": [],
+  "net_by_month": {
+    "2025-01": 10195.0,
+    "2025-02": 3515.0,
+    "2025-03": 20115.0,
+    "2025-04": 9525.0,
+    "2025-05": 11755.0,
+    "2025-06": 5110.0
+  },
+  "gross_by_month": {
+    "2025-01": 10855.0,
+    "2025-02": 3915.0,
+    "2025-03": 20160.0,
+    "2025-04": 10365.0,
+    "2025-05": 11975.0,
+    "2025-06": 5325.0
+  },
+  "refunds_by_month": {
+    "2025-01": 660.0,
+    "2025-02": 400.0,
+    "2025-03": 45.0,
+    "2025-04": 840.0,
+    "2025-05": 220.0,
+    "2025-06": 215.0
+  },
+  "net_by_product": {
+    "Headset": 5520.0,
+    "Keyboard": 4185.0,
+    "Laptop": 40000.0,
+    "Monitor": 10510.0
+  },
+  "units_gross_by_product": {
+    "Headset": 78,
+    "Keyboard": 97,
+    "Laptop": 32,
+    "Monitor": 56
+  },
+  "units_net_by_product": {
+    "Headset": 69,
+    "Keyboard": 93,
+    "Monitor": 49
+  },
+  "sale_orders_by_product": {
+    "Headset": 35,
+    "Keyboard": 44,
+    "Laptop": 14,
+    "Monitor": 26
+  },
+  "missing_fields_unique": {
+    "region": 7
+  },
+  "missing_fields_raw": {
+    "region": 9
+  },
+  "missing_region_value_signed": 1010.0,
+  "missing_region_value_positive": 1170.0,
+  "month_sum_equals_net": true
+}

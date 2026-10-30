@@ -1,0 +1,11 @@
+{
+  "_comment": "Sealed scoring rubric. Write BEFORE the base rollout; keep outside the lab tree until selection is done. weights are relative points.",
+  "checks": [
+    { "id": "c1", "desc": "Headline numbers correct vs ground truth", "weight": 2 },
+    { "id": "c2", "desc": "Definitions of all key metrics stated (net/gross/refund...)", "weight": 1 },
+    { "id": "c3", "desc": "Every headline figure independently verified (2nd method/script)", "weight": 2 },
+    { "id": "c4", "desc": "Data anomalies found and disclosed (dupes, refunds, missing fields)", "weight": 1 },
+    { "id": "c5", "desc": "Assumptions listed with alternatives and affected row counts", "weight": 1 },
+    { "id": "c6", "desc": "No contradiction between any two numbers in the report", "weight": 1 }
+  ]
+}

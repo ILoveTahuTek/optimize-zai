@@ -1,0 +1,277 @@
+{
+  "raw_rows": 141,
+  "unique_rows": 131,
+  "exact_duplicate_rows": 10,
+  "duplicate_signed_value": "270.00",
+  "duplicate_order_ids": [
+    "ORD-0014",
+    "ORD-0029",
+    "ORD-0034",
+    "ORD-0052",
+    "ORD-0057",
+    "ORD-0063",
+    "ORD-0065",
+    "ORD-0083",
+    "ORD-0089",
+    "ORD-0100"
+  ],
+  "net_revenue": "60215.00",
+  "gross_revenue": "62595.00",
+  "refund_total": "2380.00",
+  "identity_holds": true,
+  "monthly": {
+    "2025-01": {
+      "net": "10195.00",
+      "gross": "10855.00",
+      "refund": "660.00",
+      "rows": 19
+    },
+    "2025-02": {
+      "net": "3515.00",
+      "gross": "3915.00",
+      "refund": "400.00",
+      "rows": 19
+    },
+    "2025-03": {
+      "net": "20115.00",
+      "gross": "20160.00",
+      "refund": "45.00",
+      "rows": 27
+    },
+    "2025-04": {
+      "net": "9525.00",
+      "gross": "10365.00",
+      "refund": "840.00",
+      "rows": 24
+    },
+    "2025-05": {
+      "net": "11755.00",
+      "gross": "11975.00",
+      "refund": "220.00",
+      "rows": 21
+    },
+    "2025-06": {
+      "net": "5110.00",
+      "gross": "5325.00",
+      "refund": "215.00",
+      "rows": 21
+    }
+  },
+  "unparsed_dates": [],
+  "negative_rows": [
+    {
+      "id": "ORD-0083",
+      "date": "2025-06-16",
+      "product": "Keyboard",
+      "units": "1",
+      "unit_price": "45.00",
+      "amount": "-45.00"
+    },
+    {
+      "id": "ORD-0101",
+      "date": "2025-01-09",
+      "product": "Headset",
+      "units": "3",
+      "unit_price": "80.00",
+      "amount": "-240.00"
+    },
+    {
+      "id": "ORD-0118",
+      "date": "2025-06-22",
+      "product": "Headset",
+      "units": "1",
+      "unit_price": "80.00",
+      "amount": "-80.00"
+    },
+    {
+      "id": "ORD-0014",
+      "date": "2025-01-13",
+      "product": "Monitor",
+      "units": "2",
+      "unit_price": "210.00",
+      "amount": "-420.00"
+    },
+    {
+      "id": "ORD-0067",
+      "date": "2025-05-07",
+      "product": "Monitor",
+      "units": "1",
+      "unit_price": "220.00",
+      "amount": "-220.00"
+    },
+    {
+      "id": "ORD-0033",
+      "date": "2025-06-24",
+      "product": "Keyboard",
+      "units": "2",
+      "unit_price": "45.00",
+      "amount": "-90.00"
+    },
+    {
+      "id": "ORD-0084",
+      "date": "2025-03-25",
+      "product": "Keyboard",
+      "units": "1",
+      "unit_price": "45.00",
+      "amount": "-45.00"
+    },
+    {
+      "id": "ORD-0005",
+      "date": "2025-02-22",
+      "product": "Headset",
+      "units": "1",
+      "unit_price": "80.00",
+      "amount": "-80.00"
+    },
+    {
+      "id": "ORD-0128",
+      "date": "2025-04-06",
+      "product": "Monitor",
+      "units": "4",
+      "unit_price": "210.00",
+      "amount": "-840.00"
+    },
+    {
+      "id": "ORD-0049",
+      "date": "2025-02-21",
+      "product": "Headset",
+      "units": "2",
+      "unit_price": "80.00",
+      "amount": "-160.00"
+    },
+    {
+      "id": "ORD-0043",
+      "date": "2025-02-10",
+      "product": "Headset",
+      "units": "2",
+      "unit_price": "80.00",
+      "amount": "-160.00"
+    }
+  ],
+  "zero_rows": [
+    {
+      "id": "ORD-1001",
+      "date": "2025-04-02",
+      "product": "Headset",
+      "units": "0",
+      "amount": "0.00"
+    }
+  ],
+  "missing_region_rows": [
+    "ORD-0034",
+    "ORD-0086",
+    "ORD-0089",
+    "ORD-0105",
+    "ORD-0075",
+    "ORD-0046",
+    "ORD-0043"
+  ],
+  "products": {
+    "Headset": {
+      "units_sold": 78,
+      "units_ref": 9,
+      "net": "5520.00",
+      "gross": "6240.00",
+      "orders": 41,
+      "units_net": 69
+    },
+    "Keyboard": {
+      "units_sold": 97,
+      "units_ref": 4,
+      "net": "4185.00",
+      "gross": "4365.00",
+      "orders": 47,
+      "units_net": 93
+    },
+    "Laptop": {
+      "units_sold": 32,
+      "units_ref": 0,
+      "net": "40000.00",
+      "gross": "40000.00",
+      "orders": 14,
+      "units_net": 32
+    },
+    "Monitor": {
+      "units_sold": 56,
+      "units_ref": 7,
+      "net": "10510.00",
+      "gross": "11990.00",
+      "orders": 29,
+      "units_net": 49
+    }
+  },
+  "monitor_price_timeline": {
+    "210.00": {
+      "min_date": "2025-01-13",
+      "max_date": "2025-04-28",
+      "n": 18
+    },
+    "220.00": {
+      "min_date": "2025-05-07",
+      "max_date": "2025-06-21",
+      "n": 11
+    }
+  },
+  "amount_inconsistencies": [
+    "ORD-0083",
+    "ORD-0101",
+    "ORD-0118",
+    "ORD-0014",
+    "ORD-0067",
+    "ORD-0033",
+    "ORD-0084",
+    "ORD-0005",
+    "ORD-0128",
+    "ORD-0049",
+    "ORD-0043"
+  ],
+  "order_id_conflicts": [],
+  "regions": {
+    "(missing)": {
+      "net": "1010.00",
+      "rows": 7
+    },
+    "Bandung": {
+      "net": "25935.00",
+      "rows": 29
+    },
+    "Denpasar": {
+      "net": "1610.00",
+      "rows": 16
+    },
+    "Jakarta": {
+      "net": "9100.00",
+      "rows": 27
+    },
+    "Medan": {
+      "net": "15775.00",
+      "rows": 30
+    },
+    "Surabaya": {
+      "net": "6785.00",
+      "rows": 22
+    }
+  },
+  "top5_orders": [
+    [
+      "ORD-0098",
+      "5000.00"
+    ],
+    [
+      "ORD-0129",
+      "5000.00"
+    ],
+    [
+      "ORD-0055",
+      "5000.00"
+    ],
+    [
+      "ORD-0111",
+      "3750.00"
+    ],
+    [
+      "ORD-0027",
+      "3750.00"
+    ]
+  ]
+}

@@ -1,0 +1,11 @@
+skills/*
+!skills/harness-ppc/
+node_modules/
+.env
+repo-harness2/
+.backup/
+upload/
+__pycache__/
+*.pyc
+.venv/
+venv/

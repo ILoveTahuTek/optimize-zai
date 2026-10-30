@@ -1,0 +1,20 @@
+raw=141 unique=131 dupes=10 (identity OK)
+dupe_pos_value=735.00 dupe_refund_value=465.00 raw_sum_overstates_net_by=270.00
+NET=60215.00 GROSS=62595.00 refunds=2380.00 identity OK
+negrows=11: ORD-0083 ORD-0101 ORD-0118 ORD-0014 ORD-0067 ORD-0033 ORD-0084 ORD-0005 ORD-0128 ORD-0049 ORD-0043
+zerorows=1: ORD-1001
+missing_region=7 value=1010.00: ORD-0034 ORD-0086 ORD-0089 ORD-0105 ORD-0075 ORD-0046 ORD-0043
+price_violations=0 baddate_rows=2: ORD-0071:29/05/2025 ORD-0066:14/05/2025
+month 2025-03 20115.00
+month 2025-04 9525.00
+month 2025-02 3515.00
+month 2025-06 5110.00
+month 2025-01 10195.00
+month 2025-05 11755.00
+prod Laptop net=40000.00 units_pos=32 units_net=32
+prod Keyboard net=4185.00 units_pos=97 units_net=93
+prod Headset net=5520.00 units_pos=78 units_net=69
+prod Monitor net=10510.00 units_pos=56 units_net=49
+empty_field col=6 count=7
+no order_id repeated with differing content
+date_range=2025-01-01..2025-06-27 (normalized ISO)

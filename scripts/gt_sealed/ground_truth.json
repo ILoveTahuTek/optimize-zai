@@ -1,0 +1,45 @@
+{
+  "sales-2025h1": {
+    "net_revenue": 48755.0,
+    "gross_revenue": 49015.0,
+    "refunds_total": 260.0,
+    "duplicate_rows": 8,
+    "missing_region_rows": 4,
+    "top_product": "Laptop",
+    "top_product_revenue": 25000.0,
+    "monthly_net": {
+      "2025-01": 6225.0,
+      "2025-02": 10625.0,
+      "2025-03": 4740.0,
+      "2025-04": 4925.0,
+      "2025-05": 10175.0,
+      "2025-06": 12065.0
+    },
+    "n_rows_raw": 128,
+    "n_rows_unique": 120
+  },
+  "sales-2025h2": {
+    "net_revenue": 290480.0,
+    "gross_revenue": 290850.0,
+    "refunds_total": 370.0,
+    "duplicate_rows": 6,
+    "missing_region_rows": 9,
+    "top_product": "Laptop",
+    "top_product_revenue": 267500.0,
+    "monthly_net": {
+      "2025-07": 4075.0,
+      "2025-08": 7335.0,
+      "2025-09": 253280.0,
+      "2025-10": 5805.0,
+      "2025-11": 8710.0,
+      "2025-12": 11275.0
+    },
+    "n_rows_raw": 118,
+    "n_rows_unique": 112,
+    "bulk_outlier": {
+      "order_id": "ORD-0901",
+      "amount": 250000.0
+    },
+    "zero_unit_rows": 1
+  }
+}

@@ -1,0 +1,1 @@
+{'cand_1': 'dom2', 'cand_2': 'base', 'cand_3': 'agg2', 'cand_4': 'dom1', 'cand_5': 'agg1', 'cand_6': 'inv2', 'cand_7': 'inv1'}
