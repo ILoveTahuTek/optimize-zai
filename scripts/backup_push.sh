@@ -25,10 +25,10 @@ rsync -a --delete \
   --exclude '.backup/' \
   "$PROJ/" "$BK/"
 
-# 2) Skills: only our own additions are backed up
-mkdir -p "$BK/skills"
-rm -rf "$BK/skills/harness-ppc"
-cp -a "$PROJ/skills/harness-ppc" "$BK/skills/harness-ppc"
+# 2) Skills, organized: harness-ppc (ours, verbatim) + mattpocock/ + cursor/
+#    (pstack renamed) per manifests; INDEX.md generated. Third-party groups are
+#    copied into their own subdirs and can never touch harness-ppc.
+python3 "$PROJ/scripts/gen_backup_skills.py" "$BK"
 
 # 2b) Repo-level docs are canonical in $PROJ/backup-docs and must survive rsync --delete
 cp -a "$PROJ/backup-docs/README.md"   "$BK/README.md"

@@ -7,10 +7,14 @@ maintained by `scripts/backup_push.sh` inside the sandbox. It contains no secret
 ## What lives here
 
 - `harness-template/` — harness-agnostic PPC loop: protocol, stdlib scripts, examples
-- `skills/harness-ppc/` — agent skill that auto-applies the loop to future tasks
+- `skills/` — three organized stacks (see `skills/INDEX.md`):
+  - `skills/harness-ppc/` — our PPC skill (invoke: "pakai harness loop")
+  - `skills/mattpocock/` — mattpocock/skills set (upstream names)
+  - `skills/cursor/` — pstack installed as `cursor-*` (refs pre-rewritten)
 - `harness-lab/` — full experiment evidence (3 tasks, 13 rollouts, library)
-- `scripts/` — experiment + maintenance scripts (`backup_push.sh`, `install_mp_skills.sh`)
-- `download/` — deliverables (`RESULT-harness2-experiment.md`)
+- `scripts/` — experiment + maintenance scripts (`backup_push.sh`,
+  `install_mp_skills.sh`, `install_pstack_skills.sh`, `audit_skill_refs.py`)
+- `download/` — deliverables (`RESULT-harness2-experiment.md`, `skill-crossref-audit.md`)
 - `AGENTS.md` — standing instructions for agents in the restored sandbox
 
 ## Restore into a fresh sandbox
@@ -22,16 +26,21 @@ cd optimize-zai
 # 1) project content (merge; do not delete platform files)
 cp -a harness-lab scripts download harness-template AGENTS.md /home/z/my-project/
 
-# 2) re-register the PPC skill
+# 2) skills: flatten each group into the sandbox's skills/ dir
 mkdir -p /home/z/my-project/skills
 cp -a skills/harness-ppc /home/z/my-project/skills/
+cp -a skills/mattpocock/* /home/z/my-project/skills/
+cp -a skills/cursor/*      /home/z/my-project/skills/
+# (sandbox resolves skills by dir name, so groups are flattened on restore;
+#  inside THIS repo they stay organized per skills/INDEX.md)
 
-# 3) re-install Matt Pocock's agent skills (engineering/productivity/misc;
-#    not stored in this backup — fetched fresh from upstream)
+# 3) alternatively/also: pull the latest skill versions straight from upstream
 bash /home/z/my-project/scripts/install_mp_skills.sh
+bash /home/z/my-project/scripts/install_pstack_skills.sh
 
-# 4) verify the tooling
+# 4) verify the tooling and the skill graph
 python3 /home/z/my-project/harness-template/scripts/new_lab.py --help
+python3 /home/z/my-project/scripts/audit_skill_refs.py
 python3 -c "import json; json.load(open('/home/z/my-project/harness-lab/selection/key.json')); print('key.json ok')"
 ```
 
