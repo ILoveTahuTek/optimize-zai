@@ -30,6 +30,11 @@ mkdir -p "$BK/skills"
 rm -rf "$BK/skills/harness-ppc"
 cp -a "$PROJ/skills/harness-ppc" "$BK/skills/harness-ppc"
 
+# 2b) Repo-level docs are canonical in $PROJ/backup-docs and must survive rsync --delete
+cp -a "$PROJ/backup-docs/README.md"   "$BK/README.md"
+cp -a "$PROJ/backup-docs/RESTORE.md"  "$BK/RESTORE.md"
+cp -a "$PROJ/backup-docs/gitignore"   "$BK/.gitignore"
+
 # 3) Guard: refuse to commit if any secret-looking file slipped in
 if find "$BK" -maxdepth 2 -name '.env' -o -maxdepth 2 -name '*.pem' | grep -q .; then
   echo "ABORT: secret-looking file found in staging" >&2
