@@ -14,5 +14,11 @@ For any agent (human-guided or autonomous) working inside `/home/z/my-project/`:
    past tasks; add new task dirs instead.
 5. **Secrets.** Never write tokens/keys to files or commits; they live only in the current
    shell session and must be rotated by the user after use.
-6. **Backup.** This project mirrors `github.com/ILoveTahuTek/optimize-zai` (curated:
-   excludes third-party clones and vendored skills). See `RESTORE.md` in that repo.
+6. **Skill stacks.** Installed: the mattpocock set (upstream names) and pstack as
+   `cursor-*` (58 skills, internal refs pre-rewritten; `cursor-poteto-mode` orchestrates
+   the others). Verify the call graph any time with `python3 scripts/audit_skill_refs.py`
+   (report lands in `download/skill-crossref-audit.md`). `cursor-tdd`/`cursor-teach` are
+   pstack's variants — prefer them inside pstack flows, the unprefixed ones in MP flows.
+7. **Backup.** This project mirrors `github.com/ILoveTahuTek/optimize-zai` (curated:
+   excludes third-party clones; skills organized under `skills/{harness-ppc,mattpocock,
+   cursor}` with `skills/INDEX.md`). See `RESTORE.md` in that repo.
