@@ -1,4 +1,4 @@
-# PPC Loop Protocol v1.0 — Propose · Probe · Compose
+# PPC Loop Protocol v1.1 — Propose · Probe · Compose
 
 Harness-agnostic quality loop for LLM agents. It improves **the harness** — everything
 around the model: instructions, skills, scripts, tool configs, output contracts — never
@@ -96,7 +96,7 @@ Domain library (the level-2 recursion):
 9. **NEXT** — the next task in the same domain starts from the library harness; re-run
    the loop only for NEW defect classes (otherwise accept T0).
 
-## 4. Ten rules (each paid for itself in the validation experiment)
+## 4. Rules (each paid for itself in the validation experiment)
 
 1. Evidence is behavioral contrast: same input, different harness, different output.
    Opinions about prompts are not evidence.
@@ -114,6 +114,14 @@ Domain library (the level-2 recursion):
 9. Library entries carry confidence; promote on transfer wins, demote on regressions.
 10. Correctness saturates fast. What the harness buys is STRUCTURAL guarantees
     (verification, definitions, disclosure), not better luck — pick the tier accordingly.
+11. An adoption gap is not authorization. "No harness in the Library for this domain"
+    is a finding to report, not a license to pick a stack. Propose 2–3 oracle options
+    (what runs the checks, what infra each needs) and wait for the user's pick BEFORE
+    installing toolchains, databases, or touching sudo. Prefer the lightest oracle that
+    still yields real behavioral evidence (in-process tests, SQLite over a DB server,
+    stdlib over new deps). An audit-trail entry documents a decision — it never grants
+    authorization: log unconfirmed choices as `assumption → awaiting confirmation`, and
+    every logged decision must point to a file that actually exists.
 
 ## 5. Experience entry schema (EXPERIENCE.md)
 
@@ -141,3 +149,7 @@ components: <file → change → observed, one block per edit>
   persistent per-domain library of adopted harnesses + experience.
 - Validation lab (full evidence): `harness-lab/` in the same repository that ships this
   template; written report: `download/RESULT-harness2-experiment.md`.
+- v1.1: rule 11 added (adoption gap ≠ authorization) after a real failure: an agent with
+  no backend harness in the library assumed Rust + local Postgres and planned system
+  installs without user confirmation; the environment had no passwordless sudo and no
+  toolchain, and the claimed audit-trail entry did not exist.

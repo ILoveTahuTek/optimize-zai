@@ -47,6 +47,17 @@ if [ ! -d .git ]; then
   git init -b "$BRANCH" >/dev/null
   git config user.name  "ILoveTahuTek"
   git config user.email "ILoveTahuTek@users.noreply.github.com"
+  # Sandbox recycles wipe .backup while the remote keeps its history: adopt the
+  # remote HEAD as the parent so the push stays fast-forward instead of rejected.
+  if [ -n "${GHTOKEN:-}" ]; then
+    if git -c credential.helper='!f() { printf "username=x-access-token\npassword=%s\n" "$GHTOKEN"; }; f' \
+         fetch --quiet "$REMOTE_URL" "$BRANCH" 2>/dev/null; then
+      git reset --soft FETCH_HEAD
+      echo "adopted remote history at $(git rev-parse --short FETCH_HEAD)"
+    else
+      echo "no reachable remote history — starting a fresh history"
+    fi
+  fi
 fi
 git add -A
 if ! git diff --cached --quiet; then
